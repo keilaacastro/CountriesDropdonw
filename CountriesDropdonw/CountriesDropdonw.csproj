@@ -118,7 +118,6 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\CountriesDropdown\CountriesDropdown.css" />
-    <Content Include="Content\CountriesDropdown\CountriesDropdownjs.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -152,6 +151,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\CountriesDropdown\assertString.js" />
+    <Content Include="Scripts\CountriesDropdown\CountriesDropdownjs.js" />
+    <Content Include="Scripts\CountriesDropdown\isPassportNumber.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.js" />

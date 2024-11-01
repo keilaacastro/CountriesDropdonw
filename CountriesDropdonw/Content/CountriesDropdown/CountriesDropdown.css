@@ -1,33 +1,15 @@
 ﻿body {
     font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    border: 1px solid #ccc;
-    z-index: 1;
-    max-height: 150px;
-    overflow-y: auto;
+.form-group {
+    margin-top: 20px; 
 }
-
-    .dropdown-content div {
-        padding: 12px 16px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
-
-        .dropdown-content div:hover {
-            background-color: #f1f1f1;
-        }
 
 .flag-icon {
     width: 20px;
@@ -49,4 +31,22 @@
 .icon {
     width: 16px;
     height: 16px;
+}
+
+.form-group {
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.invalid-feedback,
+.valid-feedback {
+    display: none; 
+}
+
+.is-invalid ~ .invalid-feedback {
+    display: block; 
+}
+
+.is-valid ~ .valid-feedback {
+    display: block; 
 }

@@ -55,8 +55,8 @@
             </div>
         </nav>
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"> </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MiddleContent" runat="server"></asp:ContentPlaceHolder>
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Countries Dropdown</p>
@@ -64,7 +64,6 @@
         </div>
     </form>
 
-    <asp:ContentPlaceHolder ID="Scripts" runat="server">
-    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>
