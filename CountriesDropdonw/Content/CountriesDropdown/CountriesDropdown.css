@@ -2,13 +2,24 @@
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-
-.dropdown {
-    margin-bottom: 20px;
-}
+.dropdown-menu .flag-icon { margin-right: 8px; }
 
 .form-group {
-    margin-top: 20px; 
+    max-width: 400px;
+    margin: 0 auto 20px auto; 
+}
+
+.selectpicker {
+    width: 100%; 
+}
+
+.countrypicker {
+    margin-top: 10px; 
+}
+
+.form-label, .form-group label {
+    display: block; 
+    margin-bottom: 8px;
 }
 
 .flag-icon {
@@ -17,36 +28,15 @@
     margin-right: 8px;
 }
 
-.dropdown-button {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    background-color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icon {
-    width: 16px;
-    height: 16px;
-}
-
-.form-group {
-    max-width: 400px; 
-    margin: 0 auto; 
-}
-
 .invalid-feedback,
 .valid-feedback {
-    display: none; 
+    display: none;
 }
 
 .is-invalid ~ .invalid-feedback {
-    display: block; 
+    display: block;
 }
 
 .is-valid ~ .valid-feedback {
-    display: block; 
+    display: block;
 }

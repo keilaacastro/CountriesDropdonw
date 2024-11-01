@@ -151,7 +151,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
-    <Content Include="Scripts\CountriesDropdown\assertString.js" />
     <Content Include="Scripts\CountriesDropdown\CountriesDropdownjs.js" />
     <Content Include="Scripts\CountriesDropdown\isPassportNumber.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
