@@ -9,6 +9,10 @@
     margin: 0 auto 20px auto; 
 }
 
+.flag-icon {
+    margin-right: 8px; 
+}
+
 .selectpicker {
     width: 100%; 
 }

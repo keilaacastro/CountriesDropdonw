@@ -4,19 +4,18 @@
         "DE": "Alemanha",
         "AM": "Armênia",
         "AR": "Argentina",
-        "AT": "Áustria", 
+        "AT": "Áustria",
         "AU": "Austrália",
         "AZ": "Azerbaijão",
         "BH": "Bahrein",
         "BE": "Bélgica",
         "BY": "Bielorrússia",
-        "BR": "Brasil",  
+        "BR": "Brasil",
         "BG": "Bulgária",
         "CA": "Canadá",
         "CN": "China",
         "CY": "Chipre",
         "VA": "Cidade do Vaticano",
-        "KS": "Cazaquistão",
         "CL": "Chile",
         "CR": "Costa Rica",
         "CZ": "República Checa",
@@ -29,7 +28,7 @@
         "HR": "Croácia",
         "HU": "Hungria",
         "ID": "Indonésia",
-        "IR": "Iran",
+        "IR": "Irã",
         "IE": "Irlanda",
         "IN": "Índia",
         "IS": "Islândia",
@@ -56,9 +55,9 @@
         "PT": "Portugal",
         "RO": "Romênia",
         "RU": "Rússia",
-        "SL": "Slovênia",
+        "SL": "Eslovênia",
         "SK": "Eslováquia",
-        "TH": "Thailândia",
+        "TH": "Tailândia",
         "ES": "Espanha",
         "SE": "Suécia",
         "CH": "Suíça",
@@ -69,26 +68,19 @@
         "ZA": "África do Sul"
     };
 
-    $.each(allowedCountries, function (code, name) {
-        $('#countrySelect').append(
-            $('<option>', {
-                value: code,
-                text: name,
-                'data-content': `<span class="flag-icon flag-icon-${code.toLowerCase()}"></span> ${name}`
-            })
-        );
-    });
-
-    const sortedCountries = Object.keys(allowedCountries).sort((a, b) => {
+    const sortedCountryCodes = Object.keys(allowedCountries).sort((a, b) => {
         return allowedCountries[a].localeCompare(allowedCountries[b]);
     });
 
+    sortedCountryCodes.forEach(function (code) {
+        const countryName = allowedCountries[code];
+        const flagUrl = `https://flagcdn.com/w320/${code.toLowerCase()}.png`;
 
-    sortedCountries.forEach(function (code) {
         $('#countrySelect').append(
-            $('<option>', {value: code, text: allowedCountries[code], selected: code === "BR"})
+            `<option value="${code}" data-content="<img src='${flagUrl}' height='16' width='24'/> ${countryName}" ${code === "BR" ? "selected" : ""}>${countryName}</option>`
         );
     });
+
 
     $('#countrySelect').selectpicker({
         liveSearch: true,

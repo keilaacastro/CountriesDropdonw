@@ -3,6 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css">
+
+ 
     <link href="Content/CountriesDropdown/CountriesDropdown.css" rel="stylesheet" />
 </asp:Content>
 
@@ -12,7 +15,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="form-group">
                     <label for="countrySelect">Selecione um país</label>
-                    <select class="countrypicker selectpicker" id="countrySelect" data-live-search="true" data-flag="true" title="Selecione um país"></select>
+                    <select class="selectpicker" id="countrySelect" data-live-search="true" data-flag="true" title="Selecione um país"></select>
                 </div>
 
                 <div class="form-group mt-4">
@@ -27,9 +30,10 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Scripts" runat="server">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
     <script src="Scripts/CountriesDropdown/isPassportNumber.js"></script>
     <script src="Scripts/CountriesDropdown/CountriesDropdownjs.js"></script>
 </asp:Content>
